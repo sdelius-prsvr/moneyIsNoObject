@@ -7,7 +7,7 @@ const isAdmin = function(user){
 }
 
 const getEmail = function(user){
-    return (user.firstName[0] + user.lastName + '.prsvr@gmail.com').toLowerCase()
+    return `${user.firstName[0]}${user.lastName}.prsvr@gmail.com`.toLowerCase()
 }
 
 const getPlaylistLength = function(playlist){
@@ -28,11 +28,11 @@ const getHardestHomework = function(homework){
 }
 
 const createPhonebook = function(dir1, dir2) {
-    let phoneBook = {}
+    let phonebook = {}
     for (let i = 0; i < dir1.length; i++) {
-        phoneBook[dir1[i]] = dir2[i]
+        phonebook[dir1[i]] = dir2[i]
     }
-    return phoneBook
+    return phonebook
 }
 
 // ┌─────────────────────────────────────┐
